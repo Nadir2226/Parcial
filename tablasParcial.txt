@@ -1,0 +1,12 @@
+use [IssdTP42023]
+create table Aerolineas(
+idAerolinea int primary key identity (1,1),
+nombreAerolinea varchar (100) not null
+);
+ 
+ create table Vuelos(
+ id int primary key identity (1,1),
+ numeroVuelo int not null,
+ idAerolinea int,
+ foreign key (idAerolinea) references Aerolineas (idAerolinea)
+ );
