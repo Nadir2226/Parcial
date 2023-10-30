@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Menu.aspx">Volver</asp:HyperLink>
             <br />
             <br />
             <asp:TextBox ID="TextBox1" runat="server" Width="265px"></asp:TextBox>
